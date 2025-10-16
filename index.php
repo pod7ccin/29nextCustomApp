@@ -1565,8 +1565,15 @@ $(document).ready(function () {
     // ==============================
     // 🔍 VALIDATE SHIPPING FIELDS
     // ==============================
+    $form.on("keyup change blur", ".required, [data-next-field]", function () {
+      validateField($(this));
+    });
     $form.find(".required, [data-next-field]").each(function () {
-      const $field = $(this);
+      if (!validateField($(this))) {
+        isValid = false;
+      }
+    });
+    function validateField($field) {
       const tag = $field.prop("tagName").toLowerCase();
       let value = $.trim($field.val());
       if (tag === "select") {
@@ -1598,13 +1605,20 @@ $(document).ready(function () {
         if (!zipRegex.test(value)) fieldValid = false;
       }
 
-      // ❌ If invalid — show error
-      if (!fieldValid) {
-        isValid = false;
-        addError($field, errorMessage);
-        // console.warn(`❌ Missing or invalid: ${fieldName}`);
+      // ✅ Remove previous error if now valid
+      const $wrap = $field.closest(".input_wrap");
+      if (fieldValid) {
+        $field.removeClass("has-error");
+        $wrap.find(".next-error-label").remove();
+      } else {
+        // ❌ If invalid — show error (only if not already shown)
+        if ($wrap.find(".next-error-label").length === 0) {
+          addError($field, errorMessage);
+        }
       }
-    });
+
+      return fieldValid;
+    }
 
     // ==============================
     // 💳 VALIDATE CREDIT CARD FIELDS
