@@ -184,7 +184,7 @@ $campaignApiKey = $_ENV['CAMPAIGN_API_KEY'] ?? null;
 
                                     
                                     <div class="d-flex align-items-center justify-content-center mb-3"> 
-                                    <input type="button" value="Yes! Add To My Order." class="btn btn-upsell pulse" />  
+                                    <input style="max-width:300px;" type="button" value="Yes! Add To My Order." class="btn btn-upsell pulse" />  
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center mb-3"><i class="fas fa-truck me-2"></i>Free Shipping In The Same Order</div>
 

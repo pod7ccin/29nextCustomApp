@@ -152,7 +152,7 @@ textarea:focus {
 
 input.has-error,
 select.has-error {
-	background: url(../images/error-input.png?v=1.5) 96% 50% no-repeat #fff !important;
+	/*background: url(../images/error-input.png?v=1.5) 96% 50% no-repeat #fff !important;*/
 	border: 1px solid orange !important;
 }
 

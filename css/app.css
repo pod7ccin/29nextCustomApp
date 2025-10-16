@@ -126,12 +126,12 @@ textarea:focus {
 }
 input.has-error,
 select.has-error {
-	background: url(../images/error-input.png) 99.5% 50% no-repeat #fff;
+	/*background: url(../images/error-input.png) 99.5% 50% no-repeat #fff;*/
 	border: 1px solid orange
 }
 input.no-error,
 select.no-error {
-	background: url(../../images/new-index/tick-input.png) 99.5% 50% no-repeat #fff;
+	/*background: url(../../images/new-index/tick-input.png) 99.5% 50% no-repeat #fff;*/
 	border: 1px solid green
 }
 input.loading,

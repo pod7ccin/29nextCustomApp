@@ -1175,7 +1175,7 @@ form.checkout-form {
     content: "";
     width: 14px;
     height: 9px;
-    background: url("../images/polygon-icon.png");
+    /*background: url("../images/polygon-icon.png");*/
     background-repeat: no-repeat;
     top: 45%;
     right: 5%;
@@ -1233,7 +1233,8 @@ form.checkout-form {
 
 .checkout-form input.no-error ~ #shippingAddressSearch,.checkout-form input.has-error ~ #shippingAddressSearch, .checkout-form input.no-error ~ #cardNumber, .checkout-form input.has-error ~ #cardNumber, .checkout-form input.has-error ~ #securityCode, .checkout-form input.no-error ~ #securityCode, input.has-error ~ #billingAddressSearch, input.no-error ~ #billingAddressSearch {
     position: absolute;
-    top: 25%;
+    /*top: 25%;*/
+    top:15%;
     right: 25px;
 }
 
@@ -1307,7 +1308,7 @@ input:-webkit-autofill, select:-webkit-autofill {
     content: "";
     width: 16px;
     height: 15px;
-    background: url(../images/error-input.png);
+    /*background: url(../images/error-input.png);*/
     background-repeat: no-repeat;
     top: 34%;
     right: 5px;

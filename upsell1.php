@@ -60,12 +60,13 @@ $campaignApiKey = $_ENV['CAMPAIGN_API_KEY'] ?? null;
     <meta name="next-page-type" content="upsell2"> <!-- Can be product, checkout, upsell, receipt -->
     <style>
         .btn-upsell {
-            padding: 0.5rem 5rem;
+            padding: 0.8rem 5rem;
         }
 
         .btn-upsell-green {
             color: #fff;
             background-color: green !important;
+            border:none;
             /* border-color: #f2491a;
         font-size: 1.5rem;
         padding: 1rem .5rem; */
@@ -75,6 +76,7 @@ $campaignApiKey = $_ENV['CAMPAIGN_API_KEY'] ?? null;
             color: #fff;
             background-color: green;
             border-color: #fa643b;
+            border:none;
         }
 
         @media (max-width: 767.98px) {
@@ -179,7 +181,7 @@ $campaignApiKey = $_ENV['CAMPAIGN_API_KEY'] ?? null;
 
                                     <div class="clearall"></div>
                                     <div class="d-flex align-items-center justify-content-center" data-next-upsell="offer" data-next-package-id="4">
-                                        <button data-next-upsell-action="add" class="btn btn-upsell fw-bold" value="BUY NOW" style="padding: 5px 45px; background-color: #ff9d08;">Yes</button>
+                                        <button data-next-upsell-action="add" class="btn btn-upsell fw-bold" value="BUY NOW" style="padding: 3px 45px; background-color: #ff9d08;max-width: 160px;">Yes</button>
                                     </div>
                                 </div>
                             </div>

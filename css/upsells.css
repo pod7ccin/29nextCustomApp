@@ -13648,14 +13648,14 @@ ul.up-list li i{
 .btn-upsell {
   color: #fff;
   background-color: #58d058;
-  border-color: #58d058;
+  /*border-color: #58d058;*/
   font-size: 1.5rem;
   padding: 1rem 2rem;
 }
 .btn-upsell:hover {
   color: #fff;
   background-color: #71d771;
-  border-color: #69d569;
+  /*border-color: #69d569;*/
 }
 
 .pulse {

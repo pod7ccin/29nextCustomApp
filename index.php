@@ -96,6 +96,14 @@ $campaignApiKey = $_ENV['CAMPAIGN_API_KEY'] ?? null;
 
 
   <style>
+    .container{max-width:1100px !important;}
+    .main-middle-sec .checkout-page-cart-product-section{ text-align: center; margin: auto;}
+    .button, button, input[type=button]{    padding: 14px 15px;}
+    .paypal-button{ background: #F6C038; border-radius: 8px;}
+    .paypal-button:hover{background: #F6C038;}
+    .cc-google-pay{background: #1E1E1E;border-radius: 8px;}
+    .cc-google-pay:hover{background: #1E1E1E;}
+
     .gpay-button.black.short,
     .gpay-button.black.plain {
       background-size: 68px;
@@ -204,7 +212,7 @@ $campaignApiKey = $_ENV['CAMPAIGN_API_KEY'] ?? null;
       display: flex;
       flex-wrap: wrap;
       margin: 10px 0px 30px;
-      max-width: 550px;
+     /* max-width: 550px;*/
 
     }
 
@@ -656,7 +664,7 @@ $campaignApiKey = $_ENV['CAMPAIGN_API_KEY'] ?? null;
                   <div class="input_wrap">
                     <input type="email" name="email" id="inputEmail"
                       class="form-control required remove-class c-details" data-validate="email"
-                      data-error-message="Please enter a valid email!" value="" required placeholder="Email" data-next-checkout-field="email">
+                      data-error-message="Please enter a valid email!" value="" required placeholder="" data-next-checkout-field="email">
                     <label>Email address</label>
                   </div>
 
